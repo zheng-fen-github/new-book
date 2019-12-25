@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+<body>
+    <div>hello word</div>
+    <button onclick='ev()'>click</button>
+    <script>
+        let prev = performance.now();
+        let times = 0;
+        requestAnimationFrame(function measure(time) {
+            console.log(time)
+            document.body.insertAdjacentHTML("beforeEnd", Math.floor(time - prev) + " ");
+            prev = time;            
+            if (times++ < 10) requestAnimationFrame(measure);
+        });
+        const ev = () => {
+            requestAnimationFrame(function measure(time) {
+            console.log(time);            
+            if (times++ < 20) requestAnimationFrame(measure);
+            });
+        }
+    </script>
+</body>
+</html>
