@@ -27,7 +27,7 @@ function Lookselect() {
                   margin-top:3vh;
                   
               }
-              .lookselect div svg {
+              .lookselect div>svg {
                   height:3vh;
                   width:4vh;
                   margin-right:0.5vh;

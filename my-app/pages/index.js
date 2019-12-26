@@ -19,6 +19,7 @@ const App = () => (
       .App {
         height:100vh;
         width:100vw;
+        overflow:hidden;
       }
       .container {
         height:92%;

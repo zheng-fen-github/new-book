@@ -10,7 +10,7 @@ function User() {
                <h5 className='time'>2019/12/24 -</h5>
                <h5 className='number'> -   6 Photos</h5>
                <h5>man and girl</h5>
-            </div>
+            </div>            
             <style jsx>{`
                 .user {
                    height:10%;
@@ -22,6 +22,7 @@ function User() {
                .title {
                    color:blue;
                }
+
                .time,.number {
                    display:inline-block;
                }

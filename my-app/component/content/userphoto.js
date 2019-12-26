@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Mero from './mero.js'
 function Photo() {
     return (
         <div className='photoContainer'>
@@ -12,11 +12,14 @@ function Photo() {
               </li>
               <li>
                 <img src='/min-2.jpg'></img>
-              </li>        
+              </li>   
+              <Mero/>     
             </ul>
+            
             <style jsx>{`
                 .photoContainer {
                     height:36.8vh;
+                    margin-bottom:2vh;
                 }
                 .photoContainer ul {
                     list-style:none;
@@ -43,7 +46,9 @@ function Photo() {
                    overflow:hidden;
                    display:flex;
                    align-items:center;
-
+                 }
+                 .photoContainer li:hover {        
+                    box-shadow:0 0 6px #888;                
                  }
                  .photoContainer li:nth-child(2n+1) {
                     margin-bottom:0;

@@ -1,19 +1,18 @@
 import React from 'react'
-import User from './user'
-import PhotoList from './userphoto'
+import ContentList from './contentList'
 
 
 function Content() {
     return (
         <div className='content'>
-            <User/>
-            <PhotoList/>
+             <ContentList/>
+             <ContentList/>
             <style jsx>{`
             .content {
                 height:100%;
                 width:84.5%;          
                 padding:2vh 4vw;
-                overflow:hidden;
+                overflow:auto;
             }
 
             `}
