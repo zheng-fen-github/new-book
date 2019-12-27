@@ -13,7 +13,7 @@ function User() {
             </div>            
             <style jsx>{`
                 .user {
-                   height:10%;
+                  
                    color:#3b3e43;        
                 }
                 .user>div{
@@ -21,6 +21,7 @@ function User() {
                 }
                .title {
                    color:blue;
+                   font-size:1.4rem;
                }
 
                .time,.number {

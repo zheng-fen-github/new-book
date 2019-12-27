@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Nav() {
+function Search() {
     return (
         <nav>
            <div className="search">
@@ -12,42 +12,30 @@ function Nav() {
             </div>
             <style jsx>{`
                nav{                    
-                    height:8%;
+                    height:6%;
+                    width:78%;
+                    margin:0 auto;
+                    margin-top:3vh;
+                    background:black;
                     display:flex;
-                    justify-content:flex-end;
+                    justify-content:center;
                     align-items:center;
                     overflow:hidden;
-
+                    border-radius:40px;
                 }
-                .search {
-                    background:#f0f4f7;
-                    height:70%;   
-                    margin-right:2vw;
-                    border-radius:36px;
-                    display:flex;
-                    align-items:center;
-                }
-                .search svg {
-                    height:40%;
-                    opacity:0.6;
-                }
-                .search svg:hover {
-                    height:45%;
-                    opacity:1;
-                }
-                .search svg:active {
-                    height:40%;
-                    opacity:0.6;
-                }
-                .search input {
+                nav .search {
+                    width:100%;
                     height:100%;
-                    width:80%;
+                    display:flex;
+                }
+                nav .search svg {
+                  flex:1;
+                  background:white;
+                }
+                nav .search input {
+                    flex:5;
                     border:none;
-                    font-size:3vh;
-                    vertical-align:center;
-                    background:none;
-                    opacity:0.6;
-                    outline:none;
+                    font-size:100%;
                 }
             `}
             </style>
@@ -55,4 +43,4 @@ function Nav() {
     )
 }
 
-export default Nav
+export default Search

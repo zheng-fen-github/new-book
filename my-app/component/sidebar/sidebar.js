@@ -36,11 +36,32 @@ function Sidebar() {
               border-bottom:2px #f0f4f7 solid;
               margin-top:4vh;
               padding-bottom:2vh;
+              
             }
             .sidebar .addnew div {
               margin-top:2vh;
               display:flex;
               align-items:center;
+              position:relative;
+              
+            }
+            .sidebar .addnew div:hover::after {
+              display:block;
+            }
+            .sidebar .addnew div:active::after {
+              background:#eee;
+            }
+            .sidebar .addnew div::after {
+              content:'';
+              position:absolute;
+              display:none;
+              top:-2px;
+              right:50%;
+              left:-2px;
+              bottom:-2px;
+              border:solid 1px #777;
+              border-radius:20px;
+              box-shadow:0 0 5px #eee;
             }
             .sidebar>.addnew>div>svg {
               height:2vh;

@@ -1,23 +1,10 @@
 import React from 'react'
-import ContentList from './contentList'
-
-
+import Note from './notes/noteslist'
 function Content() {
-    return (
-        <div className='content'>
-             <ContentList/>
-             <ContentList/>
-            <style jsx>{`
-            .content {
-                height:100%;
-                width:84.5%;          
-                padding:2vh 4vw;
-                overflow:auto;
-            }
-
-            `}
-            </style>
-        </div>
+    return(
+        <>
+          <Note/>  
+        </>
     )
 }
 
